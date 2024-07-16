@@ -1,0 +1,180 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+header, footer{
+  background-color:rgb(211, 189, 233);
+  width: 100%;
+  min-height: 120px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom: 2px solid rgb(114, 20, 202);
+}
+
+h1 {
+  color:rgb(114, 20, 202);
+  letter-spacing: 1.1;
+  font-weight: normal;
+  margin: 0 0 0 10px;
+  border-bottom: 3px solid rgb(114, 20, 202);
+}
+
+.JGT {
+  font-family: 'Titan One', sans-serif;
+  font-size: 2em;
+}
+
+.Subtitle {
+  font-size: .8em;
+}
+
+ul {
+  padding: 0;
+  margin: 10px auto;
+  text-align: left;
+}
+
+ul li {
+  display:inline-block;
+  margin: 0 20px;
+  color:rgb(114, 20, 202);
+}
+
+a li:hover {
+  font-weight: bold;
+  border-bottom: 1px solid rgb(114, 20, 202);
+}
+
+body {
+  background-color:aliceblue;
+  position:relative;
+  top: 100px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.anchor {
+  scroll-margin-top: 130px;
+}
+
+h2 {
+  text-align: center;
+  padding: 5px 0;
+  
+}
+
+#font-families h2, #font-families th {
+  background-color: coral;
+}
+
+#font-families em {
+  color:coral;
+}
+
+#assign-font h2, #assign-font th {
+  background-color:dodgerblue;
+}
+
+#assign-font em {
+  color: dodgerblue;
+}
+
+#spacing h2, #spacing th {
+  background-color:lightseagreen;
+}
+
+#spacing em {
+  color: lightseagreen;
+}
+
+p {
+  text-align:left;
+  vertical-align:top;
+  font-size:larger;
+}
+
+#font-families p {
+  width:30%;
+}
+
+#font-families p, #font-families table {
+  display:inline-block;
+}
+
+table {
+  border-collapse: collapse;  
+  border-bottom: 1px solid black;
+  font-size: larger;
+}
+
+#font-families table {
+  width:65%;
+  margin-right:0;
+  margin-left: 4%;
+}
+
+thead {
+  text-align: center;
+}
+
+th {
+  border: 1px solid black;
+}
+
+#font-families th {
+  width: 13%;
+}
+
+#font-families td {
+  background-color:rgb(254, 181, 155);
+}
+
+#assign-font td, #spacing td {
+  background-color: rgb(195, 225, 255);
+  border-bottom: 1px solid black;
+}
+
+#spacing td {
+  background-color:rgb(141, 177, 174);
+}
+
+td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 13%;
+  padding-left: 5px;
+}
+
+td span {
+  font-family: Andale Mono, 'Courier New', monospace;
+  background-color:oldlace;
+}
+
+.property {
+  width: 15%;
+}
+
+.description {
+  width: 25%;
+}
+
+.values, .example {
+  width: 30%;
+}
+
+footer {
+  height: 100px;
+  background-color:rgb(211, 189, 233);
+}
+
+footer p {
+  color: rgb(114, 20, 202);
+  font-size: 1em;
+}

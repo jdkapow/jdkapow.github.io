@@ -1,0 +1,230 @@
+<! DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- By Jim Powers -->
+
+<html>
+  <head>
+    <title>Jim's Giant Tool for Text</title>
+    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Titan+One&display=swap" rel="stylesheet">
+  </head>
+  <header>
+    <h1><span class=JGT>Jim's Giant Tool</span> <span class=Subtitle>for Text Formatting in CSS</span></h1>
+    <nav>
+      <ul>
+        <a href='#font-families'><li>Font Families</li></a>
+        <a href='#assign-font'><li>Assigning and Styling Fonts</li></a>
+        <a href='#spacing'><li>Spacing and Alignment</li></a>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <section id="font-families" class = "anchor">
+      <h2>Font Families</h2>
+      <p>Font families are generally grouped into 5 categories: <em>serif, sans-serif, monospace, fantasy</em>, and <em>cursive</em>. Web-safe fonts are those font families that are installed on most computers and will generally be sure to render properly in your websites. The table shows several font families that are considered web-safe in each of the five categories. The data in the table comes from <a href="https://www.wix.com/blog/web-safe-fonts" target="_blank">this website.</a></p>
+      <table>
+        <thead class="super-header">
+          <tr>
+            <th colspan=5>Web-Safe Fonts</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th>Serif</th>
+            <th>Sans-Serif</th>
+            <th>Monospace</th>
+            <th>Fantasy</th>
+            <th>Cursive</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bodoni Poster</td>
+            <td>Helvetica</td>
+            <td>Andale Mono</td>
+            <td>Luminari</td>
+            <td>Brush Script</td>
+          </tr>
+          <tr>
+            <td>Linotype</td>
+            <td>Arial</td>
+            <td>Monaco</td>
+            <td>Trattatello</td>
+            <td>Bradley Hand</td>
+          </tr>
+          <tr>
+            <td>Didot</td>
+            <td>Segoe Ui</td>
+            <td>Lucida Console</td>
+            <td>Copperplate</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>American Typewriter</td>
+            <td>Trebuchet MS</td>
+            <td>Courier New</td>
+            <td>Playbill</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Georgia</td>
+            <td>Verdana</td>
+            <td></td>
+            <td>Papyrus</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Times New Roman</td>
+            <td>Century Gothic</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>EB Garamond</td>
+            <td>Tahoma</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rockwell</td>
+            <td>DejaVu Sans</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Palatino</td>
+            <td>Calibri</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Candara</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Lucida Sans Unicode</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+
+
+      </table>
+    </section>
+    <section id="assign-font" class="anchor">
+      <h2>Assign and Style Fonts</h2>
+      <p>Once you've selected a typeface (font, font family) that you want to use, you need to <em>assign</em> it to the relevant text. You also need to tell the browser how to style the text for anything but the browser's default size and style. Styling can include setting the font's <em>size, weight</em> (such as <em>bold</em>) and applying <em>italics</em>. You can use the properties shown in the table to assign and style fonts.</a></p>
+      <table>
+        <thead class="super-header">
+          <tr>
+            <th colspan=4>CSS for Assigning and Styling Fonts</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="property"><span>font-family</span></td>
+            <td class="description">Assigns a font family to the selected text. Best to use a font stack to ensure an appropriate look.</td>
+            <td class="values">Comma-delimited list of typeface names (e.g. Arial, 'Courier New') or types (e.g. serif, sans-serif).</td>
+            <td class="example"><span>font-family: Verdana, Geneva, sans-serif;</span></td>
+          </tr>
+          <tr>
+            <td class="property"><span>font-size</span></td>
+            <td class="description">Sets the font size of text. Font size value can be an absolute or relative size. Relative is preferred.</td>
+            <td class="values">There are many different ways to assign size, including absolute values (<span>small</span>, <span>pt</span>), relative values (<span>smaller</span>, <span>px</span>, <span>em</span>, <span>%</span>) and more.</td>
+            <td class="example"><span>font-size: 1.5em;<br>font-size: larger;<br>font-size: 16px;</span></td>
+          </tr>
+          <tr>
+            <td class="property"><span>font-weight</span></td>
+            <td class="description">Sets the weight (or boldness) of the text.</td>
+            <td class="values">Values include numerical values from 1 to 1000, or the following keywords: <span>normal</span> (equal to 400), <span>bold</span> (equal to 700), <span>bolder</span>, and <span>lighter</span>. A font family may only support a subset of numerical values.</td>
+            <td class="example"><span>font-weight: bold;<br>font-weight: 100;<br>font-weight: lighter;</span></td>
+          </tr>
+          <tr>
+            <td class="property"><span>font-style</span></td>
+            <td class="description">Used to produce italicized text.</td>
+            <td class="values">Values include <span>normal</span>, <span>italic</span>, and <span>oblique</span>, which is a simulated italic font produced by slanting the characters of the regular font.</td>
+            <td class="example"><span>font-style: normal;<br>font-style: italic;<br>font-style: oblique 40deg;</span></td>
+          </tr>
+        </tbody>
+
+
+      </table>
+    </section>
+    <section id="spacing" class="anchor">
+      <h2>Spacing and Alignment</h2>
+      <p>Using CSS, the <em>spacing of characters, words, and lines</em> can be adjusted to make text more readable and pleasing to the eye. The alignment of text relative to the page or html element can also be adjusted. Some of the relevant properties are described in the table.</p>
+      <table>
+        <thead class="super-header">
+          <tr>
+            <th colspan=4>CSS for Assigning and Styling Fonts</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="property"><span>letter-spacing</span></td>
+            <td class="description">Sets the horizontal spacing between the individual characters in an element.</td>
+            <td class="values" rowspan="2"> Length values in units including <span>px</span>, <span>em</span>, and <span>rem</span>. Positive values increase spacing, negative values decrease it. <span>normal</span> resets the spacing to the font default.</td>
+            <td class="example"><span>letter-spacing: normal;<br>letter-spacing: .2em;</span></td>
+          </tr>
+          <tr>
+            <td class="property"><span>word-spacing</span></td>
+            <td class="description">Sets the horizontal spacing between words in an element.</td>
+            <td class="example"><span>word-spacing: 1px;<br>word-spacing: -.2em;</span></td>
+          </tr>
+          <tr>
+            <td class="property"><span>line-height</span></td>
+            <td class="description">Sets the height of lines of text. The height includes the height of the font itself and any additional leading space.</td>
+            <td class="values">A unitless number is the preferred value: the inherited line height is multiplied by it. Can also take length values (like <span>letter-spacing</span>and <span>word-spacing</span>) or percentages. <span>normal</span> resets the height to the browser default.</td>
+            <td class="example"><span>line-height: 1.5;<br>line-height: .5em;<br>line-height: normal;</span></td>
+          </tr>
+          <tr>
+            <td class="property"><span>text-align</span></td>
+            <td class="description">Sets the horizontal alignemnt of inline text.</td>
+            <td class="values">Values include <span>left</span>, <span>right</span>, <span>center</span>, and <span>justify</span>, among others.</td>
+            <td class="example"><span>text-align: left;<br>text-align: justify;</span></td>
+          </tr>
+          <tr>
+            <td class="property"><span>vertical-align</span></td>
+            <td class="description">Sets the vertical alignment of an element's box, or the content of a table cell, within its container. Cannot be used to vertically align block-level elements.</td>
+            <td class="values">Values include <span>top</span>, <span>bottom</span>, and <span>middle</span>, among others.</td>
+            <td class="example"><span>vertical-align: top;<br>vertical-align: middle;</span></td>
+          </tr>
+        </tbody>
+
+
+      </table>
+    </section>
+  </body>
+
+  <footer>
+    <p id="footer-text"><br>Look for the whole collection of Jim's Giant Tools, coming soon!<br>Contact Jim at <a href="mailto:jdkapow@gmail.com">jdkapow@gmail.com</a> with any comments, questions, or requests.</P>
+
+  </footer>
+
+</html>
