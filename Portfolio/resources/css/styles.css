@@ -1,0 +1,196 @@
+html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  scroll-padding-top: 10rem; /* height of sticky header */
+}
+
+
+/* Header Section */
+
+header {
+  color:rgb(114, 20, 202);
+  background-color:white;
+  max-width:1000px;
+  margin:auto;
+  height: 5rem;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  border-bottom: 1px solid rgb(114, 20, 202);
+  z-index:10;
+}
+
+nav {
+  display:inline-block;
+  height:100%;
+  width:100%;
+}
+
+#logo {
+  display:inline-block;
+  width:29rem;
+}
+
+h1 {
+  letter-spacing: .06rem;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-decoration:underline;
+  font-family: 'Titan One', sans-serif;
+  font-size: 2.5rem;
+}
+
+#header-name {
+  margin:0;
+  padding:0;
+  float:right;
+}
+
+#navigation {
+  padding: 0;
+  height:100%;
+  margin: 0;
+  display:inline-flex;
+  align-items:center;
+  list-style-type:none;
+  position:absolute;
+  right:0;
+}
+
+ul li a {
+  padding:0 20px;
+  color:rgb(114, 20, 202);
+  text-decoration:none;
+}
+
+ul li:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width:1050px) {
+  #logo {
+    margin: 0 0 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width:760px) {
+  #logo {
+    width:18rem;
+  }
+  
+  h1 {
+    font-size:1.5rem;
+  }
+
+  #header-name {
+    font-size:1 rem;
+  }
+
+  ul {
+    margin:0.5rem;
+  }
+  ul li a {
+    font-size:1rem;
+  }
+  header {
+    height:3.5rem;
+  }
+  .relative {
+    top:3.6rem;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #logo {
+    width:100%;
+    text-align:center;
+    padding:0 auto 0 auto;
+  }
+
+  h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:inline;
+    font-size: 1rem;
+    font-weight:bold;
+  }
+
+  #header-name {
+    display:inline;
+    float:none;
+    font-size: 1rem;
+  }
+
+  #navigation {
+    width:100%;
+    position:static;
+    height:auto;
+    padding: .5rem;
+    margin: 0 auto;
+    justify-content:space-around;
+  }
+
+  ul {
+    width:100%;
+  }
+}
+
+/* Main */
+
+main {
+  max-width:1000px;
+  margin: 0 auto;
+  position:relative;
+  top:5.1rem;
+}
+
+.section-header {
+  width:100%;
+  padding: 2rem 0 0 0;
+}
+
+/* Project Section */
+
+#projects {
+  display:flex;
+  justify-content:space-around;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+.project {
+  background-color:lightgray;
+  flex:1;
+  max-width:40%;
+  min-width:300px;
+  border: 1px solid black;
+  text-align:center;
+  padding:1rem;
+  margin:1rem;
+}
+
+.project-header {
+  margin:0;
+}
+
+#monster-button {
+  width:8rem;
+  height:2rem;
+}
+
+.monster-info {
+  text-align:left;
+  padding:0;
+  margin:0;
+}
+
+#monster-name {
+  margin: 0.5rem 0 0 0;
+  font-weight:bold;
+}
+
+#jgt-screenshot {
+  width:90%;
+  object-fit:contain;
+}

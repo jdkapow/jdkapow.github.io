@@ -1,0 +1,70 @@
+<! DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- By Jim Powers -->
+
+<html>
+  <head>
+    <title>Jim's Giant Portfolio</title>
+    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <h1>Jim's Giant Portfolio</h1>
+          <h2 id="header-name">by Jim Powers</h2>
+        </div>
+        <ul id="navigation">
+          <li><a href='#about-me'>About Me</a></li>
+          <li><a href='#projects'>Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul id="navigation">
+      </nav>
+
+    </header>
+    
+    <main>
+      <section id="about-me">
+        <h2 class="section-header">About Me</h2>
+        <p>Blah blah blah</p>
+      </section>
+
+      <section id="projects-section">
+        <h2 class="section-header">Projects</h2>
+        <div id="projects">
+          <div class="project monster-generator">
+            <h3 class="project-header">DnD Monster Generator</h3>
+            <p class="project-description">Project to randomly generate monsters for DnD 3.5</p>
+            <button id="monster-button">Try It!</button>
+            <p class="monster-info" id="monster-name"> </p>
+            <p class="monster-info" id="monster-type"> </p>
+            <p class="monster-info" id="monster-dice"> </p>
+            <p class="monster-info" id="monster-move"> </p>
+            <p class="monster-info" id="monster-attacks"> </p>
+            <p class="monster-info" id="monster-special-attacks"> </p>
+            <p class="monster-info" id="monster-special-qualities"> </p>
+          </div>
+          <div class="project jgt">
+            <h3 class="project-header">Jim's Giant Tools for Fantasy Sports</h3>
+            <p class="project-description">Excel-based valuation and drafting tools for fantasy baseball and football</p>
+            <img id="jgt-screenshot" src="./resources/Draft-page.png" />
+          </div>
+        </div>
+        
+
+      </section>
+      
+    </main>
+
+    <footer>
+      
+    </footer>
+
+    <script src="./resources/js/monster.js"></script>
+  </body>
+
+</html>
